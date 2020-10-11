@@ -13,10 +13,9 @@ body{
 
 .main{
     width: 100%;
-    max-width: 1400px;
     background-color: #fff;
-    height: 100vh;
     margin: 5rem auto;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +24,8 @@ body{
 
 .container{
     display: flex;
+    width: 100%;
+    max-width: 1400px;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -39,10 +40,10 @@ body{
     padding: 25px;
 }
 
-.date{
+.card-row{
     display: flex;
     width: 250px;
     flex-direction: row;
     justify-content: space-between;
-    height: 2rem;
+    height: 3rem;
 }
