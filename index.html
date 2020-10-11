@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c82bd7cc90.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon-32x32.png">
+    <title>Bro Post</title>
+</head>
+<body>
+
+
+
+    <div class="main">
+        <div class="header">
+            <h1>My Blog posts</h1>
+        </div>
+        <div id="container" class="container">
+
+            <div id="card" class="card">
+                <div class="card-row">
+                    <h6>11 May 2020</h6>
+                    <i class="far fa-bookmark"></i>
+                </div>
+
+
+                <h3>Topic</h3>
+
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quaerat?</h3>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non facilis odio quam aliquid animi inventore numquam dolor. Nisi corporis soluta consectetur impedit unde eos fugiat.</p>
+            </div>
+
+            
+            
+        </div>
+
+
+    </div>
+
+    
+        
+
+      
+        
+
+       
+
+    </div>
+    
+    <script>
+        var card = document.getElementById('card');
+        var container = document.getElementById('container');
+
+        for (var i = 0; i < 6; i++){
+            container.appendChild(card.cloneNode(true));
+
+        }
+        
+    </script>
+
+</body>
+</html>

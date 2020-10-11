@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.main{
+    width: 100%;
+    max-width: 1400px;
+    background-color: #fff;
+    height: 100vh;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+}
+
+.date{
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2rem;
+}
