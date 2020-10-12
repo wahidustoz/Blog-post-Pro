@@ -30,6 +30,36 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem 5rem;
+    padding: 2rem;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px 20px;
+    border: none;
+    font-size: 13.28px;
+    font-family: inherit;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    opacity: .7;
+}
+
+.far.fa-bookmark{
+    color: green;
 }
 
 .bar-nav{
@@ -41,11 +71,15 @@ body{
 
 }
 
+
+
 .new-post h5{
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: 'Libre Franklin', sans-serif;
 }
+
 .new-post h5:hover{
     color: white;
     background-color: #16db93;
@@ -67,12 +101,12 @@ body{
     width: 300px;
     margin: 2rem;
     border-radius: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 30px;
 }
 
 .card:hover{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 12px 1px;s
 }
 
 .card-row{
