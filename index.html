@@ -11,32 +11,25 @@
 </head>
 <body>
 
-    <div class="main">
+    <div id="container">
 
-        <div class="nav-bar"> 
-        </div>
-
-        <div class="bar">
-
-            <div class="search-bar">
-                 <i class="fas fa-search"></i>
-                <!-- <input id="input" type="text" placeholder="Search everything"> -->
-                <input id="search" placeholder='Search...' />
-            </div>
-
-            <div class="bar-nav">
-
-                <i class="far fa-bookmark fa-lg"></i>
-
-                <div class="new-post">
-                  <h5>New Post</h5>  
+        <header id="nav-bar">
+                <div class="search-bar">
+                     <i class="fas fa-search"></i>
+                    <input id="search" placeholder='Search...'/>
                 </div>
+    
+                <div class="bar-nav">
+    
+                    <i class="far fa-bookmark fa-lg"></i>
+    
+                    <div class="new-post">
+                      <h5>New Post</h5>  
+                    </div>
+                </div>        
+        </header>
 
-            </div>
-
-        </div>
-
-        <div id="container" class="container">
+        <main id="main">
 
             <div id="card" class="card">
                 <div class="card-row">
@@ -55,12 +48,15 @@
                 
             </div>
 
-        </div>
+        </main>
+        <footer id="footer">
+            
+        </footer>
     </div>
 
     <script>
         var card = document.getElementById('card');
-        var container = document.getElementById('container');
+        var container = document.getElementById('main');
 
         for (var i = 0; i < 5; i++){
             container.appendChild(card.cloneNode(true));
