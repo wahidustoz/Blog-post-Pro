@@ -3,42 +3,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
- 
     font-family: 'Libre Franklin', sans-serif;
-
 }
 
-.main{
+#container, #nav-bar, .search-bar, .bar-nav, #main{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar, .search-bar, .bar-nav, .card-row{
+    justify-content: space-between;
+}
+
+#container{
     max-width: 1500px;
     background-color: #fff;
     margin: 0 auto;
     margin-top: 5rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.bar{
-    
+#nav-bar{  
     max-width: 1000px;
     width: 100%;
     height: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 1rem 5rem;
     padding: 2rem;
 }
 
 .search-bar{
-    display: flex;
-    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    justify-content: space-between;
     padding: 0 15px;
     border-radius: 10px;
 }
@@ -65,13 +60,7 @@ input::placeholder{
 .bar-nav{
     max-width: 150px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
-
-
 
 .new-post h5{
     padding: 10px 20px;
@@ -85,15 +74,11 @@ input::placeholder{
     background-color: #16db93;
 }
 
-
-
-.container{
-    display: flex;
+#main{
     width: 100%;
     max-width: 1400px;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 
@@ -106,36 +91,23 @@ input::placeholder{
 }
 
 .card:hover{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 12px 1px;s
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 12px 1px;
 }
 
 .card-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 1rem;
     color: rgb(141, 141, 141);
 }
 
-
-.card-content{
-    line-height:25px;
-
-}
-.card-content h3{
-    margin-bottom: 1rem;
-
-}
 .card-content p{
     font-size: 15px;
-
+    margin-top: 1rem;
+    line-height: 25px;
 }
 
 .card-topic{
     margin-bottom: 3rem;
-}
-
-.green{
     color: #34bf49;
-
 }

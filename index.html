@@ -11,32 +11,25 @@
 </head>
 <body>
 
-    <div class="main">
-        <div class="nav-bar">
-            
-        </div>
+    <div id="container">
 
-        <div class="bar">
-
-            <div class="search-bar">
-                 <i class="fas fa-search"></i>
-                <!-- <input id="input" type="text" placeholder="Search everything"> -->
-                <input id="search" placeholder='Search...' />
-            </div>
-
-            <div class="bar-nav">
-
-                <i class="far fa-bookmark fa-lg"></i>
-
-                <div class="new-post">
-                  <h5>New Post</h5>  
+        <header id="nav-bar">
+                <div class="search-bar">
+                     <i class="fas fa-search"></i>
+                    <input id="search" placeholder='Search...'/>
                 </div>
-                
-            </div>
+    
+                <div class="bar-nav">
+    
+                    <i class="far fa-bookmark fa-lg"></i>
+    
+                    <div class="new-post">
+                      <h5>New Post</h5>  
+                    </div>
+                </div>        
+        </header>
 
-        </div>
-
-        <div id="container" class="container">
+        <main id="main">
 
             <div id="card" class="card">
                 <div class="card-row">
@@ -44,45 +37,30 @@
                     <i class="far fa-bookmark"></i>
                 </div>
 
-                <div class="green card-topic">
+                <div class="card-topic">
                    <h3>Topic</h3> 
                 </div>
                 
                 <div class="card-content">
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non facilis odio quam aliquid animi inventore numquam dolor.</p>
                 </div>
                 
             </div>
 
+        </main>
+        <footer id="footer">
             
-
-            
-            
-        </div>
-
-
+        </footer>
     </div>
-
-    </div>
-
-
-
-
-
-
-
 
     <script>
         var card = document.getElementById('card');
-        var container = document.getElementById('container');
+        var container = document.getElementById('main');
 
         for (var i = 0; i < 5; i++){
             container.appendChild(card.cloneNode(true));
-
         }
-
     </script>
 
 </body>
