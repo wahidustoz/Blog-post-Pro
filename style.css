@@ -11,27 +11,57 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #268a35;
+}
+
 .main{
     max-width: 1500px;
     background-color: #fff;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.nav-bar{
+    width: 100%;
+    max-width: 1020px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid #2d3a2f;
+
+}
+
+.nav-bar-home{
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
 .bar{
     
-    max-width: 1000px;
+    max-width: 1020px;
     width: 100%;
     height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 5rem;
-    padding: 2rem;
 }
 
 .search-bar{
