@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -66,10 +63,7 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
-
 
 .new-post h5{
     padding: 10px 20px;
@@ -82,8 +76,6 @@ input::placeholder{
     color: white;
     background-color: #16db93;
 }
-
-
 
 .container{
     display: flex;
@@ -104,7 +96,7 @@ input::placeholder{
 }
 
 .card:hover{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 12px 1px;s
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 12px 1px;
 }
 
 .card-row{
@@ -114,7 +106,6 @@ input::placeholder{
     margin-bottom: 1rem;
     color: rgb(141, 141, 141);
 }
-
 
 .card-content{
     line-height:25px;
