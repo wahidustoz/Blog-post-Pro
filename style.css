@@ -159,30 +159,12 @@ li{
 .card-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    color: rgb(141, 141, 141);
 }
 
 
 .card-content{
     line-height:25px;
-
 }
-.card-content h3{
-    margin-bottom: 1rem;
-
-}
-.card-content p{
-    font-size: 15px;
-
-}
-
-.card-topic{
-    margin-bottom: 3rem;
-}
-
-.green{
-    color: #34bf49;
-
+.card-title{
+    margin: 1rem 0; 
 }
