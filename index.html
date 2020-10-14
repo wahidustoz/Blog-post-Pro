@@ -18,49 +18,54 @@
 
         <nav class="navbar">
             <a class="navbar-brand" href="#">codwiz.net</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-menu" href="#">categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">recents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">trending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">about</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="navbar-items ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-menu" href="#">categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">recents</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">about</a>
+                </li>
+            </ul>
         </nav>
 
-        <div class="toolbar">
-            <div class="toolbar-search float-left">
-
-            </div>
-
-            <div class="page-title">
-                 
-            </div>
-
-            <ul class="toolbar-items float-right">
-
-            </ul>
-        </div>
+        
 
     </header>
     
     <main>
-        <div class="content">
+        <div id="content" class="content">
+            <div class="toolbar">
+                <div class="toolbar-search-box mr-auto">
+                    <i class="fas fa-search"></i>
+                    <input class="toolbar-search" placeholder="Search...">
+                </div>
+    
+                <div class="page-title m-auto">
+                     <h2>Recent</h2>
+                </div>
 
-            <div class="card">
+                <ul class="toolbar-items ml-auto">
+                    <li class="toolbar-item">
+                        <i class="far fa-bookmark fa-lg text-green"></i>
+                    </li>
+                    <li class="toolbar-item">
+                        <a href="#" class="action-btn">New Post</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="card" class="card">
                 <div class="card-row">
-                    <h6 class="post-date float-left">
+                    <h5 class="post-date">
                         11 May 2020
-                    </h6>
-                    <i class="far fa-bookmark float-right"></i>
+                    </h5>
+                    <i class="far fa-bookmark ml-auto"></i>
                 </div>
 
                 <h3 class="card-header"> 
@@ -80,6 +85,16 @@
 
     <footer>
     </footer>
+
+    <script>
+        var content = document.getElementById('content');
+        let card = document.getElementById('card');
+
+        for(var i = 0; i<20; i++)
+        {
+            content.append(card.cloneNode(true));
+        }
+    </script>
 
 </body>
 </html>
